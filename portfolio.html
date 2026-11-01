@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<title>AR Institute – Best Tuition in Motihari | ICSE, CBSE & Competitive Exams</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8ff;--card:#fff;--text:#14213d;--muted:#5b6785;--p:#4f46e5;--p2:#06b6d4;--acc:#f59e0b;--line:#e3e8f7;--glow:rgba(79,70,229,.18);color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1020;--card:#141b34;--text:#eaf0ff;--muted:#9aa7c7;--line:#243056;--glow:rgba(6,182,212,.22);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1020;--card:#141b34;--text:#eaf0ff;--muted:#9aa7c7;--line:#243056;--glow:rgba(6,182,212,.22);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Poppins',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:auto;padding:0 20px}
+section{padding:80px 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;text-align:center}
+h2 span,.grad{background:linear-gradient(90deg,var(--p),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{text-align:center;color:var(--muted);max-width:620px;margin:8px auto 40px}
+.btn{display:inline-block;padding:13px 26px;border-radius:50px;font-weight:600;border:0;cursor:pointer;font-family:inherit;font-size:1rem;transition:.3s}
+.btn.main{background:linear-gradient(90deg,var(--p),var(--p2));color:#fff;box-shadow:0 8px 24px var(--glow)}
+.btn.main:hover{transform:translateY(-3px)}
+.btn.ghost{border:2px solid var(--p);color:var(--p)}
+.btn.ghost:hover{background:var(--p);color:#fff}
+/* nav */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{font-weight:800;font-size:1.3rem}
+.logo b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;margin-right:8px}
+nav ul{display:flex;gap:22px;list-style:none;padding:0;font-weight:500;font-size:.93rem}
+nav ul a:hover{color:var(--p)}
+.tools{display:flex;gap:10px;align-items:center}
+#theme{background:var(--card);border:1px solid var(--line);width:40px;height:40px;border-radius:50%;cursor:pointer;font-size:1.1rem}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--text);cursor:pointer}
+@media(max-width:860px){.burger{display:block}nav ul{display:none;position:absolute;top:68px;left:0;right:0;background:var(--card);flex-direction:column;padding:18px 24px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}.tools .btn{display:none}}
+/* hero */
+.hero{padding-top:150px;position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(80px);z-index:0;animation:float 9s ease-in-out infinite}
+.hero::before{width:360px;height:360px;background:var(--p);opacity:.25;top:40px;left:-100px}
+.hero::after{width:320px;height:320px;background:var(--p2);opacity:.25;right:-80px;bottom:0;animation-delay:-4s}
+@keyframes float{50%{transform:translateY(-40px)}}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--card);border:1px solid var(--line);padding:6px 16px;border-radius:50px;font-size:.85rem;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.7rem);line-height:1.15;font-weight:800}
+.hero p{color:var(--muted);margin:18px 0 28px;font-size:1.05rem}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.board{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px;box-shadow:0 20px 50px var(--glow);animation:float 7s ease-in-out infinite}
+.board .screen{background:linear-gradient(135deg,#1e1b4b,#0e7490);border-radius:14px;padding:22px;color:#fff;min-height:150px}
+.board .screen small{opacity:.8}
+.typed{font-size:1.25rem;font-weight:700;min-height:2.6em;margin-top:8px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.chips span{background:var(--bg);border:1px solid var(--line);padding:5px 12px;border-radius:50px;font-size:.8rem;font-weight:600}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:-10px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;text-align:center;padding:24px 10px}
+.stat b{font-size:2.1rem;font-weight:800;display:block}
+.stat span{color:var(--muted);font-size:.9rem}
+@media(max-width:700px){.stats{grid-template-columns:repeat(2,1fr)}}
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:.35s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px var(--glow);border-color:var(--p)}
+.card .ic{font-size:2rem;width:60px;height:60px;display:grid;place-items:center;border-radius:16px;background:var(--bg);margin-bottom:14px}
+.card h3{font-size:1.15rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.93rem}
+/* finder */
+.finder{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:30px}
+.tabs{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-bottom:22px}
+.tab{padding:10px 20px;border-radius:50px;border:1px solid var(--line);background:var(--bg);color:var(--text);cursor:pointer;font-family:inherit;font-weight:600}
+.tab.on{background:linear-gradient(90deg,var(--p),var(--p2));color:#fff;border-color:transparent}
+.out{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;min-height:50px}
+.out span{background:var(--bg);border:1px solid var(--line);padding:8px 16px;border-radius:12px;font-weight:500;animation:pop .4s}
+@keyframes pop{from{opacity:0;transform:scale(.8)}}
+.note{text-align:center;color:var(--muted);margin-top:18px;font-size:.92rem}
+/* facility */
+.fac{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.fac div{background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;border-radius:20px;padding:26px 20px;text-align:center;font-weight:600;transition:.3s}
+.fac div:hover{transform:scale(1.05) rotate(-1deg)}
+.fac i{font-style:normal;font-size:2.2rem;display:block;margin-bottom:8px}
+/* slider */
+.slider{position:relative;max-width:700px;margin:auto;text-align:center}
+.slide{display:none;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px}
+.slide.on{display:block;animation:pop .5s}
+.slide p{font-size:1.05rem;font-style:italic}
+.slide b{display:block;margin-top:14px;color:var(--p)}
+.dots{display:flex;gap:8px;justify-content:center;margin-top:16px}
+.dots button{width:11px;height:11px;border-radius:50%;border:0;background:var(--line);cursor:pointer}
+.dots button.on{background:var(--p);width:28px;border-radius:8px}
+/* faq */
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:12px;max-width:760px;margin-inline:auto}
+summary{font-weight:600;cursor:pointer}
+details p{color:var(--muted);margin-top:8px}
+/* form */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+@media(max-width:800px){.contact{grid-template-columns:1fr}}
+form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;display:grid;gap:14px}
+input,select,textarea{width:100%;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-family:inherit;font-size:.95rem}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--p)}
+.info p{margin-bottom:14px;color:var(--muted)}
+.info b{color:var(--text)}
+footer{text-align:center;padding:30px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.reveal{opacity:0;transform:translateY(34px);transition:.8s}
+.reveal.show{opacity:1;transform:none}
+#top,#wa{position:fixed;right:18px;z-index:40;width:50px;height:50px;border-radius:50%;border:0;cursor:pointer;font-size:1.4rem;display:grid;place-items:center;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+#wa{bottom:calc(20px + env(safe-area-inset-bottom,0px));background:#25d366;color:#fff}
+#call{position:fixed;right:18px;bottom:calc(80px + env(safe-area-inset-bottom,0px));z-index:40;width:50px;height:50px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem;background:var(--p);color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+#top{bottom:calc(140px + env(safe-area-inset-bottom,0px));background:var(--p);color:#fff;opacity:0;pointer-events:none;transition:.3s}
+#top.on{opacity:1;pointer-events:auto}
+@media(max-width:600px){section{padding:56px 0}.hero{padding-top:120px}.cta{flex-direction:column}.cta .btn{width:100%;text-align:center}.card,.finder,form{padding:20px}.tabs{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding-bottom:6px}.tab{white-space:nowrap}input,select,textarea{font-size:16px}.board{padding:18px}.stat b{font-size:1.7rem}}
+*{-webkit-tap-highlight-color:transparent}
+#bar{position:fixed;top:0;left:0;height:4px;width:0;background:linear-gradient(90deg,var(--acc),var(--p2));z-index:60}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<header><div class="wrap"><nav>
+  <a href="#home" class="logo"><b>AR</b>Institute</a>
+  <ul id="menu"><li><a href="#about">About</a></li><li><a href="#courses">Courses</a></li><li><a href="#finder">Subjects</a></li><li><a href="#facilities">Facilities</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul>
+  <div class="tools"><button id="theme" aria-label="Toggle theme">🌙</button><a href="#contact" class="btn main">Enroll Now</a><button class="burger" id="burger" aria-label="Menu">☰</button></div>
+</nav></div></header>
+
+<section class="hero" id="home"><div class="wrap">
+  <div>
+    <span class="tag">📍 Motihari, Bihar · Admissions Open</span>
+    <h1>Build Your Future at <span class="grad">AR Institute</span></h1>
+    <p>Motihari’s trusted tuition institute for ICSE &amp; CBSE boards and all major competitive exams — with concept-clear teaching, smart boards, AC classrooms and CCTV-secured campus.</p>
+    <div class="cta"><a href="tel:+918051819353" class="btn main">📞 Call 08051819353</a><a href="#courses" class="btn ghost">Explore Courses</a></div>
+  </div>
+  <div class="board">
+    <div class="screen"><small>● SMART BOARD LIVE</small><div class="typed" id="typed"></div></div>
+    <div class="chips"><span>❄️ AC Rooms</span><span>📹 CCTV</span><span>🖥️ Smart Class</span><span>📝 Weekly Tests</span></div>
+  </div>
+</div></section>
+
+<div class="wrap"><div class="stats reveal">
+  <div class="stat"><b data-n="1000" data-s="+">0</b><span>Students Taught</span></div>
+  <div class="stat"><b data-n="2" data-s="">0</b><span>Expert Teachers</span></div>
+  <div class="stat"><b data-n="98" data-s="%">0</b><span>Success Rate</span></div>
+  <div class="stat"><b data-n="10" data-s="+">0</b><span>Years of Trust</span></div>
+</div></div>
+
+<section id="about"><div class="wrap">
+  <h2 class="reveal">Why <span>AR Institute?</span></h2>
+  <p class="sub reveal">Quality questions, personal attention and a disciplined, safe learning environment — everything a student needs under one roof.</p>
+  <div class="grid">
+    <div class="card reveal"><div class="ic">🎯</div><h3>Best Question Practice</h3><p>Carefully curated question banks, previous-year papers and chapter-wise tests for sharp exam readiness.</p></div>
+    <div class="card reveal"><div class="ic">👨‍🏫</div><h3>Experienced Faculty</h3><p>Friendly, qualified teachers who build concepts from the ground up and clear every doubt.</p></div>
+    <div class="card reveal"><div class="ic">📊</div><h3>Regular Progress Reports</h3><p>Weekly tests and monthly parent updates so you always know how your child is improving.</p></div>
+    <div class="card reveal"><div class="ic">🛡️</div><h3>Safe &amp; Secure</h3><p>Full CCTV coverage and a disciplined atmosphere give parents complete peace of mind.</p></div>
+  </div>
+</div></section>
+
+<section id="courses" style="background:var(--card)"><div class="wrap">
+  <h2 class="reveal">Our <span>Courses</span></h2>
+  <p class="sub reveal">From school boards to national-level entrance exams — we prepare students for every goal.</p>
+  <div class="grid">
+    <div class="card reveal"><div class="ic">📘</div><h3>CBSE Board</h3><p>Classes 6–12 with NCERT-focused teaching, sample papers and board-pattern practice.</p></div>
+    <div class="card reveal"><div class="ic">📗</div><h3>ICSE Board</h3><p>Classes 6–10 with in-depth coverage of ICSE syllabus, writing skills and application-based questions.</p></div>
+    <div class="card reveal"><div class="ic">🧬</div><h3>NEET / JEE</h3><p>Foundation to advanced batches for medical and engineering entrance exams.</p></div>
+    <div class="card reveal"><div class="ic">🏆</div><h3>Olympiad &amp; NTSE</h3><p>Logical reasoning, maths and science olympiad training from early classes.</p></div>
+    <div class="card reveal"><div class="ic">🚆</div><h3>SSC · Railway · Bank</h3><p>Quantitative aptitude, reasoning, English and GK for government job exams.</p></div>
+    <div class="card reveal"><div class="ic">🎖️</div><h3>NDA &amp; Others</h3><p>Defence and other competitive exam guidance with mock tests and strategy sessions.</p></div>
+  </div>
+</div></section>
+
+<section id="finder"><div class="wrap">
+  <h2 class="reveal">Find Your <span>Batch</span></h2>
+  <p class="sub reveal">Pick a programme to see the subjects we cover.</p>
+  <div class="finder reveal">
+    <div class="tabs" id="tabs"></div>
+    <div class="out" id="out"></div>
+    <p class="note">Batch timings &amp; fees: please contact us for the latest details.</p>
+  </div>
+</div></section>
+
+<section id="facilities" style="background:var(--card)"><div class="wrap">
+  <h2 class="reveal">Premium <span>Facilities</span></h2>
+  <p class="sub reveal">A modern, comfortable and secure campus designed for focused learning.</p>
+  <div class="fac reveal">
+    <div><i>🖥️</i>Smart Board Classes</div><div><i>❄️</i>AC Classrooms</div><div><i>📹</i>CCTV Surveillance</div><div><i>📝</i>Weekly Mock Tests</div><div><i>💬</i>Doubt Clearing Sessions</div><div><i>📚</i>Study Material</div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <h2 class="reveal">What Parents &amp; <span>Students Say</span></h2>
+  <p class="sub reveal">Sample reviews — replace with real feedback from your students.</p>
+  <div class="slider reveal" id="slider">
+    <div class="slide on"><p>“The smart board makes tough topics so easy. My marks improved a lot in just a few months!”</p><b>— Student, Class 10 (ICSE)</b></div>
+    <div class="slide"><p>“AC classrooms and CCTV give us confidence. Teachers are very caring and regular with tests.”</p><b>— Parent, Motihari</b></div>
+    <div class="slide"><p>“The question practice here is the best. It really helped my competitive exam preparation.”</p><b>— Student, Class 12 (CBSE)</b></div>
+    <div class="dots" id="dots"></div>
+  </div>
+</div></section>
+
+<section id="faq" style="background:var(--card)"><div class="wrap">
+  <h2 class="reveal">Frequently <span>Asked</span></h2><p class="sub"></p>
+  <details><summary>Do you teach both ICSE and CBSE?</summary><p>Yes, we have dedicated batches for both boards with separate study material and test series.</p></details>
+  <details><summary>How can I get admission?</summary><p>Call us on 08051819353 or send an enquiry through the form below, and we will guide you.</p></details>
+  <details><summary>Is the campus safe for students?</summary><p>Absolutely. The entire institute is under CCTV surveillance and run in a disciplined manner.</p></details>
+  <details><summary>Do you prepare for competitive exams?</summary><p>Yes — NEET, JEE, Olympiad, NTSE, SSC, Railway, Bank, NDA and more.</p></details>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2 class="reveal">Get in <span>Touch</span></h2>
+  <p class="sub reveal">Send your enquiry — it opens WhatsApp with your details pre-filled.</p>
+  <div class="contact">
+    <form id="form" class="reveal">
+      <input id="nm" placeholder="Student’s name" required>
+      <input id="ph" type="tel" placeholder="Phone number" required>
+      <select id="cl"><option>Class 6–8</option><option>Class 9–10 (ICSE)</option><option>Class 9–10 (CBSE)</option><option>Class 11–12 (CBSE)</option><option>NEET / JEE</option><option>SSC / Railway / Bank</option><option>Olympiad / NTSE</option></select>
+      <textarea id="msg" rows="3" placeholder="Your message (optional)"></textarea>
+      <button class="btn main" type="submit">Send Enquiry on WhatsApp</button>
+    </form>
+    <div class="info reveal">
+      <p>📍 <b>Address:</b><br>AR Institute, Motihari, East Champaran, Bihar</p>
+      <p>📞 <b>Phone:</b><br><a href="tel:+918051819353" style="color:var(--p);font-weight:600">08051819353</a></p>
+      <p>🕘 <b>Timings:</b><br>Mon – Sat · 7:00 AM – 7:00 PM</p>
+      <p>✅ ICSE · CBSE · Smart Board · AC Rooms · CCTV</p>
+    </div>
+  </div>
+</div></section>
+
+<footer>© 2026 AR Institute, Motihari. All rights reserved. · Shaping Futures with Smart Learning</footer>
+<a id="call" href="tel:+918051819353" aria-label="Call">📞</a>
+<a id="wa" href="https://wa.me/918051819353" aria-label="WhatsApp">💬</a>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+const $=s=>document.querySelector(s);
+// theme
+const root=document.documentElement,tb=$('#theme');
+tb.onclick=()=>{const d=getComputedStyle(root).colorScheme==='dark';root.dataset.theme=d?'light':'dark';tb.textContent=d?'🌙':'☀️'};
+$('#burger').onclick=()=>$('#menu').classList.toggle('open');
+document.querySelectorAll('#menu a').forEach(a=>a.onclick=()=>$('#menu').classList.remove('open'));
+// typed text
+const words=['Smart Board Learning','ICSE & CBSE Excellence','NEET · JEE · SSC Prep','Safe CCTV Campus'];
+let wi=0,ci=0,del=false;
+(function type(){const w=words[wi],t=$('#typed');t.textContent=w.slice(0,ci);
+ if(!del&&ci++===w.length){del=true;return setTimeout(type,1400)}
+ if(del&&--ci<0){del=false;ci=0;wi=(wi+1)%words.length}
+ setTimeout(type,del?40:90)})();
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');
+ e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n;let v=0;const s=setInterval(()=>{v+=Math.ceil(n/50);if(v>=n){v=n;clearInterval(s)}c.textContent=v+c.dataset.s},30)});
+ io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// batch finder
+const data={'Class 6–8':['Maths','Science','English','Social Science','Hindi'],'ICSE 9–10':['Physics','Chemistry','Biology','Maths','English Lang & Lit','History & Civics','Geography'],'CBSE 9–10':['Maths','Science','Social Science','English','Hindi','Sanskrit'],'CBSE 11–12':['Physics','Chemistry','Maths','Biology','Accountancy','Economics','English'],'NEET / JEE':['Physics','Chemistry','Maths / Biology','Mock Tests','Doubt Sessions'],'Govt. Exams':['Quant Aptitude','Reasoning','English','General Awareness','Mock Tests']};
+const tabs=$('#tabs'),out=$('#out');
+Object.keys(data).forEach((k,i)=>{const b=document.createElement('button');b.className='tab';b.textContent=k;b.onclick=()=>show(k,b);tabs.append(b);if(!i)show(k,b)});
+function show(k,b){tabs.querySelectorAll('.tab').forEach(t=>t.classList.remove('on'));b.classList.add('on');out.innerHTML=data[k].map(s=>`<span>${s}</span>`).join('')}
+// slider
+const sl=[...document.querySelectorAll('.slide')],dots=$('#dots');let si=0,tm;
+sl.forEach((_,i)=>{const d=document.createElement('button');d.onclick=()=>go(i);dots.append(d)});
+function go(i){si=i;sl.forEach((s,j)=>s.classList.toggle('on',j===i));[...dots.children].forEach((d,j)=>d.classList.toggle('on',j===i));clearInterval(tm);tm=setInterval(()=>go((si+1)%sl.length),5000)}
+go(0);
+// scroll progress + top
+addEventListener('scroll',()=>{const h=document.documentElement;$('#bar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';$('#top').classList.toggle('on',h.scrollTop>500)});
+$('#top').onclick=()=>scrollTo({top:0,behavior:'smooth'});
+// form -> WhatsApp
+$('#form').onsubmit=e=>{e.preventDefault();
+ const t=`Hello AR Institute! I’d like to enquire.%0AName: ${encodeURIComponent($('#nm').value)}%0APhone: ${encodeURIComponent($('#ph').value)}%0AClass/Course: ${encodeURIComponent($('#cl').value)}%0AMessage: ${encodeURIComponent($('#msg').value)}`;
+ window.open('https://wa.me/918051819353?text='+t,'_blank')};
+</script>
+</body>
+</html>
